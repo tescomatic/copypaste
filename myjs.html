@@ -9,7 +9,10 @@
   </head>
   <body>
     <input type="text" name="" id="text">
-    <button class="btn btn-danger mt-3"  onclick="myclick()" >Copy</button>
+    <button class="btn btn-danger mt-3"  onclick="myClick()" >Copy</button>
+    <h1 class="holyDemo">
+
+    </h1>
 
 
 <h1 id="header"></h1>
@@ -37,6 +40,7 @@
   <input type="text" id="inp1" style="">
   <input type="text" id="inp2">
   <button onclick="add()">add</button>
+  
   <table class="table">
     <tr>
       <td id="data1">hdhhd</td>
@@ -81,7 +85,7 @@ let {log,count}=console
       value:200
     }
   ];
-  let names=['Teslim','Bolu','Ay','Titi','Teslim','Bolu','Ay','Titi','Teslim','Bolu','Ay',
+  let names=['olawale','Bolu','Ay','Titi','Teslim','Bolu','Ay','Titi','Teslim','Bolu','Ay',
   'Titi','Teslim','Bolu','Ay','Titi'];
 
 let str=234567
@@ -90,5 +94,10 @@ log(str+'',str)
 
 
 // myclick()
+let screen = document.querySelector('.holyDemo')
+let inpDemo = document.querySelector('#text')
+function myClick (){
+  screen.innerHTML += inpDemo.value
+}
  
 </script>
