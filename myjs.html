@@ -10,6 +10,7 @@
   <body>
     <input type="text" name="" id="text">
     <button class="btn btn-danger mt-3"  onclick="myclick()" >Copy</button>
+    <div id="show"></div>
 
 
 <h1 id="header"></h1>
@@ -90,5 +91,12 @@ log(str+'',str)
 
 
 // myclick()
+function myclick(){
+    let inputTag =  document.getElementById('text')
+    console.log(inputTag.value)
+    
+
+    document.getElementById('show').innerHTML+=inputTag.value
+}
  
 </script>
