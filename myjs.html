@@ -10,8 +10,7 @@
   <body>
     <input type="text" name="" id="text">
     <button class="btn btn-danger mt-3"  onclick="myclick()" >Copy</button>
-
-
+<p id="showw"></p>
 <h1 id="header"></h1>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -89,6 +88,10 @@ let str=234567
 log(str+'',str)
 
 
-// myclick()
+function myclick(){
+  datas=text.value
+  showw.innerHTML += `<p>${datas}</p>`
+  text.value=''
+}
  
 </script>
