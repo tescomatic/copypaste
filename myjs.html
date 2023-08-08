@@ -10,6 +10,7 @@
   <body>
     <input type="text" name="" id="text">
     <button class="btn btn-danger mt-3"  onclick="myclick()" >Copy</button>
+    <h5 id="h5"></h5>
 
 
 <h1 id="header"></h1>
@@ -34,7 +35,7 @@
   </div>
   
   <!-- <h1>change from efe</h1> -->
-  <input type="text" id="inp1" style="">
+  <input type="text" id="inp1">
   <input type="text" id="inp2">
   <button onclick="add()">add</button>
   <table class="table">
@@ -90,5 +91,9 @@ log(str+'',str)
 
 
 // myclick()
+  function myclick() {
+    let inpValue = document.getElementById('text')
+    let dom = document.getElementById('h5').innerHTML = inpValue.value
+  }
  
 </script>
