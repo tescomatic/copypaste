@@ -8,8 +8,9 @@
   
   </head>
   <body>
-    <input type="text" name="" id="text">
+    <input type="text" name="" id="textBox">
     <button class="btn btn-danger mt-3"  onclick="myclick()" >Copy</button>
+    <p class="fs-1" id="copiedText"></p>
 
 
 <h1 id="header"></h1>
@@ -89,6 +90,11 @@ let str=234567
 log(str+'',str)
 
 
-// myclick()
+function myclick() {
+  let datas = textBox.value;
+
+  copiedText.innerHTML += `<p>${datas}</p> `;
+  textBox.value =''
+}
  
 </script>
